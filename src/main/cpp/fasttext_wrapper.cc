@@ -205,4 +205,8 @@ namespace FastTextWrapper {
     std::string FastTextApi::getPretrainedVectorsFileName() {
         return privateMembers->args_->pretrainedVectors;
     }
+
+	std::vector<std::string> FastTextApi::getNN(int32_t k,  std::string word) {
+        return fastText.nn(k, word);
+    }
 }

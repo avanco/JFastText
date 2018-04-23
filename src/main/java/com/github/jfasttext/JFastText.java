@@ -100,6 +100,10 @@ public class JFastText {
         return stringVec2Strings(fta.getWords());
     }
 
+    public List<String> getNN(int k, String word) {
+        return stringVec2Strings(fta.getNN(k, word));
+    }
+
     public int getNLabels() {
         return fta.getNLabels();
     }

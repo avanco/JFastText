@@ -52,6 +52,7 @@ namespace FastTextWrapper {
         double getSamplingThreshold();
         std::string getLabelPrefix();
         std::string getPretrainedVectorsFileName();
+		std::vector<std::string> getNN(int32_t , std::string);
     };
 }
 

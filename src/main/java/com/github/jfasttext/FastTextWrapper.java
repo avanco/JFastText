@@ -224,6 +224,8 @@ public class FastTextWrapper extends com.github.jfasttext.config.FastTextWrapper
         public native double getSamplingThreshold();
         public native @StdString BytePointer getLabelPrefix();
         public native @StdString BytePointer getPretrainedVectorsFileName();
+		public native @ByVal StringVector getNN(int arg0, @StdString BytePointer arg1);
+		public native @ByVal StringVector getNN(int arg0, @StdString String arg1);
     }
 
 
