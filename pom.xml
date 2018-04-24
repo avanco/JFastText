@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.vinhkhuc</groupId>
+    <groupId>com.github.vinhkhuc.avanco</groupId>
     <artifactId>jfasttext</artifactId>
     <version>0.4-SNAPSHOT</version>
     <name>Java interface for fastText</name>
@@ -33,10 +33,17 @@
         </developer>
     </developers>
 
+	<!--
     <scm>
         <connection>scm:git:https://github.com/vinhkhuc/JFastText.git</connection>
         <developerConnection>scm:git:git@github.com:vinhkhuc/JFastText.git</developerConnection>
         <url>https://github.com/vinhkhuc/JFastText</url>
+    </scm>
+	-->
+    <scm>
+        <connection>scm:git:https://github.com/avanco/JFastText.git</connection>
+        <developerConnection>scm:git:git@github.com:avanco/JFastText.git</developerConnection>
+        <url>https://github.com/avanco/JFastText</url>
     </scm>
 
     <properties>
@@ -119,6 +126,7 @@
                     </execution>
                 </executions>
             </plugin>
+			<!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
@@ -133,6 +141,7 @@
                     </execution>
                 </executions>
             </plugin>
+			-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
